@@ -82,3 +82,7 @@ insert into pets (id,name,animal_type,owner_id) values (2,'Priyanshu','Dog',4),(
 ```
 update pets set owner_id=5 where id=2;
 ```
+### delete data from col
+```
+delete from pets where id=1;
+```
