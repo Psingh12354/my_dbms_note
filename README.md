@@ -20,3 +20,24 @@ truncate table product;
 select * from product;
 show tables;
 ```
+
+### Add column
+```
+alter table product add column coffe_his varchar(20);
+```
+### delete column
+```
+alter table product drop column coffe_his;
+```
+### truncate
+```
+truncate table product;
+```
+### Add primary key
+```
+Alter table <tablename> add primary key (columnname);
+```
+### Remove added primary key
+```
+Alter table <tablename> drop primary key;
+```
