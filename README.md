@@ -36,10 +36,12 @@ truncate table product;
 ### Add primary key
 ```
 Alter table <tablename> add primary key (columnname);
+Alter table address add primary key (id);
 ```
 ### Remove added primary key
 ```
 Alter table <tablename> drop primary key;
+Alter table address drop primary key;
 ```
 ### to get the details
 ```
