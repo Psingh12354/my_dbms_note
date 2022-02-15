@@ -77,3 +77,8 @@ insert into pets (id,name,animal_type,owner_id) values (1,'Priyanshu','Dog',2);
 # can insert more than ones in one go
 insert into pets (id,name,animal_type,owner_id) values (2,'Priyanshu','Dog',4),(3,'Priyanshu','Dog',6);
 ```
+
+### Update column value
+```
+update pets set owner_id=5 where id=2;
+```
