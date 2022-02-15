@@ -86,3 +86,8 @@ update pets set owner_id=5 where id=2;
 ```
 delete from pets where id=1;
 ```
+### Is null and is not null
+```
+select * from customer1 where phone_number is null;
+select * from customer1 where phone_number is not null;
+```
