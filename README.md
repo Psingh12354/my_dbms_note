@@ -62,4 +62,11 @@ ALTER TABLE Orders
 ADD CONSTRAINT FK_PersonOrder
 FOREIGN KEY (PersonID) REFERENCES Persons(PersonID);
 ```
-
+### change column name
+```
+alter table pets change `species` `animal_type` varchar(20);
+```
+### modify datatype
+```
+alter table pets modify id numeric;
+```
