@@ -96,3 +96,8 @@ select * from customer1 where phone_number is not null;
 select * from customer1 where gender in ('M','F');
 select * from customer1 where gender not in ('M');
 ```
+### limit and offset
+```
+select * from customer1 limit 5; # for first 5
+select * from customer1 limit 5 offset 10; #from 5 to 10
+```
