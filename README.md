@@ -41,3 +41,8 @@ Alter table <tablename> add primary key (columnname);
 ```
 Alter table <tablename> drop primary key;
 ```
+### to get the details
+```
+descibe tablename
+```
+```
