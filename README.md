@@ -91,3 +91,8 @@ delete from pets where id=1;
 select * from customer1 where phone_number is null;
 select * from customer1 where phone_number is not null;
 ```
+### In and not in
+```
+select * from customer1 where gender in ('M','F');
+select * from customer1 where gender not in ('M');
+```
