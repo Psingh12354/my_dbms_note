@@ -70,3 +70,10 @@ alter table pets change `species` `animal_type` varchar(20);
 ```
 alter table pets modify id numeric;
 ```
+### insert into table
+```
+# one at a time
+insert into pets (id,name,animal_type,owner_id) values (1,'Priyanshu','Dog',2);
+# can insert more than ones in one go
+insert into pets (id,name,animal_type,owner_id) values (2,'Priyanshu','Dog',4),(3,'Priyanshu','Dog',6);
+```
