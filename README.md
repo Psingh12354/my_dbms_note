@@ -446,3 +446,14 @@ VALUES (1,74),(1,75),(1,76),(2,10),(2,11),(3,100),(3,101),(4,66),(4,67),(5,141),
 (404,34),(404,35),(405,109),(405,110),(405,111),(406,72),(407,93),(407,94),(408,49),(409,88),
 (410,117),(410,118),(410,119);
 ```
+### Aggregate data
+```
+show databases;
+create database rough;
+use cinema_booking_system;
+select * from customers;
+select count(*) from customers;
+select sum(no_seats) from rooms;
+select max(lenght_min) from films;
+select avg(lenght_min) from films;
+```
