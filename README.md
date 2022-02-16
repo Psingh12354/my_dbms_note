@@ -105,3 +105,7 @@ select * from customer1 limit 5 offset 10; #from 5 to 10
 ```
 select first_name,last_name,gender,phone_number as number from customer1; #as is use to create alias alternate name
 ```
+### top 3
+```
+SELECT TOP 3 * FROM Customers;
+```
