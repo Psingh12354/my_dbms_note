@@ -466,3 +466,25 @@ select * from films;
 select * from reserved_seat;
 select screening_id, customer_id,(select count(seat_id) from reserved_seat where booking_id=b.id) from bookings b; #correlated
 ```
+
+### Concatenation
+```
+# concatenate
+select concat(first_name,' ',last_name,' ',email) as name from customers;
+```
+
+### Substring
+```
+# substring(string,start,length) and sub is col name or substr()
+select substring("Hello world",2,7) as sub;
+select substring("Hello world",-2,7) as sub; # start from last 2nd move till end which is d
+select substr(name,1,5) as short_string from films;
+```
+
+### Upper case and Lower case
+```
+#upper and lower
+select upper(name) from films;
+select lower(name) from films;
+select upper(name) as upper_name from films;
+```
