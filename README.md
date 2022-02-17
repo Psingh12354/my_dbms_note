@@ -488,3 +488,15 @@ select upper(name) from films;
 select lower(name) from films;
 select upper(name) as upper_name from films;
 ```
+### date month and year
+```
+# date
+select date('2022-02-17 07:45:32');
+select date(start_time) as date from screenings;
+select * from screenings where date(start_time) between '2017-10-03' and '2017-10-05';
+# month
+select month('2022-02-17 07:45:32') as month_1;
+
+# year
+select year('2022-02-17 07:45:32') as yearly;
+```
