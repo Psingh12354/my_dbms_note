@@ -457,3 +457,12 @@ select sum(no_seats) from rooms;
 select max(lenght_min) from films;
 select avg(lenght_min) from films;
 ```
+### Subqueries
+```
+use cinema_booking_system;
+select id, start_time from screenings where film_id in (select id from films where lenght_min>120); # Non correlated
+select * from screenings;
+select * from films;
+select * from reserved_seat;
+select screening_id, customer_id,(select count(seat_id) from reserved_seat where booking_id=b.id) from bookings b; #correlated
+```
